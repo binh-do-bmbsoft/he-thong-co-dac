@@ -1,0 +1,20 @@
+import React from 'react';
+import './style.scss';
+
+export function Part2View(props) {
+    return (
+        <div>
+            <h3>PHẦN II: THUYẾT MINH QUY TRÌNH CÔNG NGHỆ</h3>
+            <img src={require("../asset/images/sodohethong.jpg")} className="w-100" />
+            <p>Nguyên liệu ban đầu là dung dịch NaOH có nồng độ 5%(klg). Dung dịch từ bể chứa nguyên liệu được bơm lên bồn cao vị. Từ bồn cao vị, dung dịch chảy qua lưu lượng kế rồi đi vào thiết bị gia nhiệt và được đun nóng đến nhiệt độ sôi rồi đưa vào nồi thứ 1 để cô đặc, sản phẩm cô đặc của nồi thứ 1 dùng làm nguyên liệu cô đặc cho nồi thứ 2. </p>
+            <p>Hơi thứ của nồi thứ 1 được tận dụng làm hơi đốt cho nồi thứ 2, sản phẩm cô đặc của nồi thứ 2 sẽ được bơm đến bể chứa sản phẩm và xử lý tiếp. </p>
+            <p>Hơi thứ và khí không ngưng thoát ra từ phía trên của buồng bốc nồi thứ 2 đi vào thiết bị ngưng tụ baromet (thiết bị ngưng tụ kiểu trực tiếp). Chất làm lạnh là nước được bơm vào ngăn trên cùng còn dòng hơi thứ được dẫn vào ngăn dưới cùng của thiết bị. Dòng hơi thứ đi lên gặp nước giải nhiệt để ngưng tụ thành lỏng và cùng chảy xuống bồn chứa qua ống baromet. Khí không ngưng tiếp tục đi lên trên, được dẫn qua bộ phận tách giọt rồi được bơm chân không hút ra ngoài. Khi hơi thứ ngưng tụ thành lỏng thì thể tích của hơi giảm làm áp suất trong thiết bị ngưng tụ giảm. Vì vậy, thiết bị ngưng tụ baromet là thiết bị ổn định chân không, duy trì áp suất chân không trong hệ thống. Thiết bị làm việc ở áp suất chân không nên nó phải được lắp đặt ở độ cao cần thiết để nước ngưng có thể tự chảy ra ngoài khí quyển mà không cần bơm. Bình tách giọt có một vách ngăn với nhiệm vụ tách những giọt lỏng bị lôi cuốn theo dòng khí không ngưng để đưa về bồn chứa nước ngưng.</p>
+            <p>Thiết bị gia nhiệt là thiết bị trao đổi nhiệt dạng ống chùm: thân hình trụ, đặt đứng, bên trong gồm nhiều ống nhỏ được bố trí theo đỉnh hình tam giác đều. Các đầu ống được giữ chặt trên vỉ ống và vỉ ống được hàn dính vào thân. Nguồn nhiệt là hơi nước bão hoà có áp suất 4 at đi bên ngoài ống (phía vỏ). Dung dịch đi từ dưới lên ở bên trong ống. Hơi nước bão hoà ngưng tụ trên bề mặt ngoài của ống và cấp nhiệt cho dung dịch để nâng nhiệt độ của dung dịch lên nhiệt độ sôi. Dung dịch sau khi được gia nhiệt sẽ chảy vào thiết bị cô đặc để thực hiện quá trình bốc hơi. Hơi nước ngưng tụ thành nước lỏng và theo ống dẫn nước ngưng qua bẫy hơi chảy ra ngoài.</p>
+            <p>Nguyên lý làm việc của nồi cô đặc:</p>
+            <p className="margin-left-10">Phần dưới của thiết bị là buồng đốt, gồm có các ống truyền nhiệt và một ống tuần hoàn trung tâm. Dung dịch đi trong ống còn hơi đốt (hơi nước bão hoà) đi trong khoảng không gian ngoài ống. Hơi đốt ngưng tụ bên ngoài ống và truyền nhiệt cho dung dịch đang chuyển động trong ống. Dung dịch đi trong ống theo chiều từ trên xuống và nhận nhiệt do hơi đốt ngưng tụ cung cấp để sôi, làm hoá hơi một phần dung môi.</p>
+            <p>Nguyên tắc hoạt động của ống tuần hoàn trung tâm:</p>
+            <p className="margin-left-10">Khi thiết bị làm việc, dung dịch trong ống truyền nhiệt sôi tạo thành hỗn hợp lỏng – hơi có khối lượng riêng giảm đi và bị đẩy từ dưới lên trên miệng ống. Đối với ống tuần hoàn, thể tích dung dịch theo một đơn vị bề mặt truyền nhiệt lớn hơn so với trong ống truyền nhiệt nên lượng hơi tạo ra trong ống truyền nhiệt lớn hơn. Vì lý do trên, khối lượng riêng của hỗn hợp lỏng – hơi ở ống tuần hoàn lớn hơn so với ở ống truyền nhiệt và hỗn hợp này được đẩy xuống dưới. Kết quả là có dòng chuyển động tuần hoàn tự nhiên trong thiết bị: từ dưới lên trong ống truyền nhiệt và từ trên xuống trong ống tuần hoàn.</p>
+            <p className="margin-left-10">Phần phía trên thiết bị là buồng bốc để tách hỗn hợp lỏng – hơi thành 2 dòng. Hơi thứ đi lên phía trên buồng bốc, đến bộ phận tách giọt để tách những giọt lỏng ra khỏi dòng. Giọt lỏng chảy xuống dưới còn hơi thứ tiếp tục đi lên. Dung dịch còn lại được hoàn lưu.</p>
+        </div>
+    )
+}
